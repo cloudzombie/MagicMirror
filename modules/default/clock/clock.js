@@ -10,11 +10,11 @@ Module.register("clock",{
 	defaults: {
 		displayType: 'digital', // options: digital, analog, both
 
-		timeFormat: config.timeFormat,
+		timeFormat: 12,
 		displaySeconds: true,
 		showPeriod: true,
 		showPeriodUpper: false,
-		clockBold: false,
+		clockBold: true,
 		showDate: true,
 
 		/* specific to the analog clock */
@@ -22,7 +22,7 @@ Module.register("clock",{
 		analogFace: 'simple', // options: 'none', 'simple', 'face-###' (where ### is 001 to 012 inclusive)
 		analogPlacement: 'bottom', // options: 'top', 'bottom', 'left', 'right'
 		analogShowDate: 'top', // options: false, 'top', or 'bottom'
-		secondsColor: '#888888',
+		secondsColor: '#FFC0CB',
 	},
 	// Define required scripts.
 	getScripts: function() {
